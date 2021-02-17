@@ -1,0 +1,74 @@
+body {
+   background-color: cornflowerblue;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+#container {
+   width: 960px;
+   margin: 0 auto;
+   padding: 60px;
+}
+
+h1 {
+   text-align: center;
+   color: rgb(241, 241, 241);
+}
+
+#container_dados {
+   background-color: rgb(241, 241, 241);
+   color: cornflowerblue;
+   width: 400px;
+   height: 400px;
+   margin: 0 auto;
+   padding: 20px;
+   border-radius: 15px;
+}
+
+h2 {
+   text-align: center;
+}
+
+.entrada {
+   padding: 10px;
+   text-align: center;
+}
+
+input {
+   background-color: rgb(207, 217, 236);
+   border: none;
+   border-radius: 5px;
+   height: 20px;
+   width: 80px;
+   padding: 10px;
+   font-size: 18px;
+   color: rgb(72, 109, 177);
+   outline-color: rgb(167, 190, 233);
+}
+
+button {
+   display: block;
+   width: 180px;
+   padding: 10px;
+   margin: 20px auto;
+   background-color: cornflowerblue;
+   color: #fff;
+   outline-color: rgb(167, 190, 233);
+   font-weight: bold;
+   font-size: 18px;
+   border: none;
+   border-radius: 5px;
+}
+
+button:hover {
+   background-color: rgb(92, 134, 212);
+}
+
+h3 {
+   border-top: 2px solid cornflowerblue;
+   padding-top: 20px;
+}
+
+#resultado {
+   font-style: italic;
+   font-size: 18px;
+}
