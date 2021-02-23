@@ -1,12 +1,12 @@
 body {
-   background-color: cornflowerblue;
    font-family: Arial, Helvetica, sans-serif;
+   background-color: cornflowerblue;
 }
 
-#container {
+.container {
    width: 960px;
-   margin: 0 auto;
-   padding: 60px;
+   margin: 70px auto;
+   text-align: center;
 }
 
 h1 {
@@ -14,13 +14,14 @@ h1 {
    color: rgb(241, 241, 241);
 }
 
-#container_dados {
-   background-color: rgb(241, 241, 241);
-   color: cornflowerblue;
+.container_dados {
    width: 400px;
    height: 400px;
-   margin: 0 auto;
+   margin: 50px auto;
    padding: 20px;
+   text-align: center;
+   background-color: rgb(241, 241, 241);
+   color: cornflowerblue;
    border-radius: 15px;
    box-shadow:  2px 2px 20px 5px rgba(0, 0, 0, 0.13);
 }
@@ -30,33 +31,30 @@ h2 {
 }
 
 .entrada {
-   padding: 10px;
+   padding: 20px;
    text-align: center;
 }
 
 input {
-   background-color: rgb(207, 217, 236);
-   border: none;
-   border-radius: 5px;
-   height: 20px;
    width: 80px;
    padding: 10px;
    font-size: 18px;
+   background-color: rgb(207, 217, 236);
    color: rgb(72, 109, 177);
    outline-color: rgb(167, 190, 233);
+   border: none;
+   border: none;
+   border-radius: 5px;
 }
 
 button {
-   display: block;
-   width: 180px;
+   width: 150px;
    padding: 10px;
-   margin: 20px auto;
-   background-color: cornflowerblue;
-   color: #fff;
-   outline-color: rgb(167, 190, 233);
-   font-weight: bold;
    font-size: 18px;
+   background-color: cornflowerblue;
+   color: rgb(241, 241, 241);
    border: none;
+   outline:none;
    border-radius: 5px;
 }
 
@@ -65,6 +63,7 @@ button:hover {
 }
 
 h3 {
+   text-align: left;
    border-top: 2px solid cornflowerblue;
    padding-top: 20px;
 }
@@ -72,4 +71,18 @@ h3 {
 #resultado {
    font-style: italic;
    font-size: 18px;
+   text-align: left;
+}
+
+.return {
+   padding: 10px;
+   text-decoration: none;
+   color: rgb(241, 241, 241);
+   background-color: rgb(74, 117, 197);
+   border-radius: 5px;
+}
+
+.return:hover {
+   background-color: rgb(92, 134, 212);
+   border-radius: 5px;
 }
