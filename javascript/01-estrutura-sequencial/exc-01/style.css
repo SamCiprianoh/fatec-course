@@ -1,0 +1,117 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   background-color: cornflowerblue;
+   font-family: monospace;
+   color: #eee;
+}
+
+.container {
+   max-width: 960px;
+   height: 100vh;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.indice {
+   padding: 10px;
+   margin-bottom: 30px;
+   background-color: rgb(67, 108, 184);
+   border-radius: 5px;
+}
+
+.indice:hover {
+   background-color: rgb(85, 123, 192);
+}
+
+.indice a {
+   text-decoration: none;
+   color: #eee;
+   font-size: 1.1em;
+   padding: 10px;
+}
+
+.title {
+   margin-bottom: 30px;
+}
+
+.container-dados {
+   background-color: ghostwhite;
+   color: rgb(80, 123, 202);
+   width: 500px;
+   height: 600px;
+   border-radius: 15px;
+}
+
+.enuciado {
+   margin-bottom: 60px;
+   padding: 30px;
+   font-size: 1.2em;
+   border-bottom: 1px solid #ccc;
+}
+
+.dados {
+   margin-bottom: 30px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.dados label {
+   font-size: 1.1em;
+   margin-right: 5px;
+}
+
+.dados input {
+   width: 80px;
+   background-color: rgb(189, 206, 238);
+   padding: 5px;
+   border: none;
+   outline-color: rgb(118, 144, 192);
+   font-size: 1.1em;
+   color: rgb(91, 116, 163);
+}
+
+.btn {
+   display: block;
+   background-color: cornflowerblue;
+   color: #eee;
+   font-size: 1.25em;
+   padding: 10px;
+   margin: 0 auto;
+   border: none;
+   outline: none;
+   border-radius: 5px;
+}
+
+.btn:hover {
+   background-color: rgb(131, 172, 248);
+}
+
+.resultado {
+   padding: 30px;
+   margin-top: 60px;
+   border-top: 1px solid #ccc;
+}
+
+.resultado p {
+   font-size: 1.25em;
+   font-weight: bold;
+   margin-bottom: 10px;
+}
+
+#result {
+   font-size: 1.25em;
+   font-style: italic;
+}
+
+.dev {
+   font-size: 1.1em;
+   margin-top: 20px;
+}

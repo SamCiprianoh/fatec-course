@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Exercícios 05</title>
+   <style>
+       body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: cornflowerblue;
+        }
+
+        .container {
+        width: 960px;
+        margin: 70px auto;
+        text-align: center;
+        }
+
+        h1 {
+        text-align: center;
+        color: rgb(241, 241, 241);
+        }
+
+        .container_dados {
+        width: 400px;
+        height: 500px;
+        margin: 50px auto;
+        padding: 20px;
+        text-align: center;
+        background-color: rgb(241, 241, 241);
+        color: cornflowerblue;
+        border-radius: 15px;
+        box-shadow:  2px 2px 20px 5px rgba(0, 0, 0, 0.13);
+        }
+
+        h2 {
+        text-align: center;
+        }
+
+        .entrada {
+        padding: 20px;
+        text-align: center;
+        }
+
+        input {
+        width: 80px;
+        padding: 10px;
+        font-size: 18px;
+        background-color: rgb(207, 217, 236);
+        color: rgb(72, 109, 177);
+        outline-color: rgb(167, 190, 233);
+        border: none;
+        border: none;
+        border-radius: 5px;
+        }
+
+        button {
+        width: 150px;
+        padding: 10px;
+        font-size: 18px;
+        background-color: cornflowerblue;
+        color: rgb(241, 241, 241);
+        border: none;
+        outline:none;
+        border-radius: 5px;
+        }
+
+        button:hover {
+        background-color: rgb(92, 134, 212);
+        }
+
+        h3 {
+        text-align: left;
+        border-top: 2px solid cornflowerblue;
+        padding-top: 20px;
+        }
+
+        #resultado {
+        font-style: italic;
+        font-size: 18px;
+        text-align: left;
+        }
+
+        .return {
+        padding: 10px;
+        text-decoration: none;
+        color: rgb(241, 241, 241);
+        background-color: rgb(74, 117, 197);
+        border-radius: 5px;
+        }
+
+        .return:hover {
+        background-color: rgb(92, 134, 212);
+        border-radius: 5px;
+        }
+   </style>
+   <script>
+
+        function calcula(){
+            let num1 = Number(document.getElementById("num1").value)
+            let num2 = Number(document.getElementById("num2").value)
+            let opcao = Number(document.getElementById("opcao").value)
+            let resultado
+
+            switch(opcao){
+                case 1: 
+                    resultado = ( num1 + num2) / 2
+                    document.getElementById("resultado").innerHTML = `O resultado da operação é ${resultado}`
+                    break // sai do switch e não entra nos cases abaixo
+                case 2: 
+                    if (num1 >= num2){
+                        resultado = (num1 - num2)
+                        document.getElementById("resultado").innerHTML = `O resultado da operação é ${resultado}`
+                    }
+                    else {
+                        resultado = (num2 - num1)
+                        document.getElementById("resultado").innerHTML = `O resultado da operação é ${resultado}`
+                    }
+                    break                        
+                case 3: 
+                    resultado = num1 * num2
+                    document.getElementById("resultado").innerHTML = `O resultado da operação é ${resultado}`
+                    break
+                case 4: 
+                    if (num2 != 0) {
+                        resultado = num1 / num2
+                        document.getElementById("resultado").innerHTML = `O resultado da operação é ${resultado}`
+                    }
+                    else{
+                        resultado = `Não é possível dividir por zero!`
+                    }
+                break
+                default: 
+                    resultado = `Opção Inválida! Tente novamente...`
+            }
+        }
+
+    </script>
+
+</head>
+<body>
+        
+    <div class="container">
+        <h1>Exercício 05 - Lista 2</h1>
+        <div class="container_dados">
+            <h2>Digite dois números</h2>
+            <div class="entrada">
+                <label for="num1">Número 1</label>
+                <input type="number" id="num1">
+            </div>
+            <div class="entrada">
+                <label for="num2">Número 2</label>
+                <input type="number" id="num2">
+            </div>
+            <div class="entrada">
+                <label for="opcao">Opção de 1 a 4</label>
+                <input type="number" id="opcao">
+            </div>
+            <button type="button" onclick="calcula()">Calcular</button>
+            <h3>Resultado</h3>
+            <div id="resultado"></div>
+        </div>
+        <a href="index.html" class="return">Índice</a>
+        </div>
+        
+</body>
+</html>

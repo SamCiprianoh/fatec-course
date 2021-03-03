@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Exercícios 03</title>
+
+   <script>
+      function pagar(){
+         let valor, total, tipo
+         let total_prazo = 0, total_vista = 0, v_parcela = 0
+
+         for(let i = 1; i <= 5; i++){
+            tipo = prompt(`Qual forma de pagamento [V - à vista] ou  [P - a prazo]`)
+
+
+            if(tipo != 'V' && tipo != 'P'){
+               i--
+               alert('ERRO!')
+            }
+            else if(tipo == 'V'){
+               valor = Number(prompt(`Digite o valor da ${i}ª compra`))
+               total_vista = valor + total_vista
+            }
+            else if(tipo == 'P') {
+               valor = Number(prompt(`Digite o valor da ${i}ª compra`))
+               total_prazo = valor + total_prazo
+            }
+         }
+         total = total_vista + total_prazo
+         v_parcela = total_prazo / 3
+
+         document.getElementById('resultado1').innerHTML = `O Valor total das compras à vista é de: R$ ${total_vista}`
+         document.getElementById('resultado2').innerHTML = `O Valor total das compras a prazo é de: R$ ${total_prazo}`
+         document.getElementById('resultado3').innerHTML = `O Valor total das compras efetuadas é de: R$ ${total}`
+         document.getElementById('resultado4').innerHTML = `Parcelado em 3x de: R$ ${v_parcela.toFixed(2)}`
+      }
+   </script>
+
+</head>
+
+<body>
+   <h2>Controle de pagamento</h2>
+   <div>
+      <button type="button" onclick="pagar()">Pagar</button>
+   </div>
+   <div id="resultado1"></div>
+   <div id="resultado2"></div>
+   <div id="resultado3"></div>
+   <div id="resultado4"></div>
+ 
+
+   <script src="script.js"></script>
+</body>
+</html>
