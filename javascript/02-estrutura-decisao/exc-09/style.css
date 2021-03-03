@@ -1,0 +1,251 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: monospace;
+   color: #eee;
+}
+
+div.flex-dash {
+   display: flex;
+   flex-direction: row;
+}
+
+aside {
+   display: block;
+   height: 100vh;
+   width: 300px;
+   background-color: rgb(73, 103, 158);
+   font-weight: bold;
+}
+
+aside p {
+   background-color: rgb(91, 120, 173);
+   padding: 23px;
+   border-right: 1px solid rgb(79, 106, 158);
+   font-size: 1.5em;
+   text-align: center;
+}
+
+main {
+   display: block;
+   width: calc(100% - 300px);
+   background-color: rgb(225, 225, 238);
+}
+
+.flex-dash header {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 1.25em;
+   height: 70px;
+   background-color: rgb(91, 120, 173);
+}
+
+.main-content {
+   height: calc(100% - 70px);
+   margin: 0 auto;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+}
+
+.menu {
+   margin-top: 80px;
+   color: #eee;
+}
+
+.menu h4 {
+   margin-top: 40px;
+   padding-left: 30px;
+   color: rgb(145, 165, 202);
+}
+
+.menu ul {
+   list-style: none;
+}
+
+.menu ul li {
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+}
+
+.menu ul li a {
+   text-decoration: none;
+   color: #eee;
+   margin-left: 10px;
+   font-size: 1.125em;
+   padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.title {
+   margin-bottom: 30px;
+   font-size: 2em;
+}
+
+.container-enuciado {
+   background-color: ghostwhite;
+   color: rgb(80, 123, 202);
+   width: 650px;
+   height: 500px;
+   border-radius: 15px 0 0 15px;
+   padding: 50px;
+   border-right: 1px solid rgb(220, 220, 255);
+   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.container-enuciado p {
+   font-size: 1.2em;
+}
+
+
+
+
+
+
+.content-table {
+   background-color: rgb(211, 227, 255);
+   border-collapse: collapse;
+   margin: 30px 0;
+   font-size: 1.1em;
+   min-width: 100%;
+   border-radius: 8px 8px 0 0;
+   overflow: hidden;
+   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+   background-color: rgb(128, 165, 233);
+   color: #eee;
+   text-align: left;
+}
+
+.content-table th,
+.content-table td {
+   padding: 12px 15px;
+}
+
+.content-table tbody tr {
+   border-bottom: 1px solid rgb(243, 246, 250);
+}
+
+.content-table tbody tr:nth-last-of-type(even) {
+   background-color: rgb(228, 237, 255);
+}
+
+.content-table tbody tr:last-of-type {
+   border-bottom: 2px solid rgb(128, 165, 233);
+}
+
+
+
+
+
+
+
+
+
+
+
+.container-dados {
+   background-color: ghostwhite;
+   color: rgb(80, 123, 202);
+   width: 400px;
+   height: 500px;
+   border-radius: 0 15px 15px 0;
+   padding: 50px;
+   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+   text-align: center;
+}
+
+.dados {
+   margin: 60px 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.dados label {
+   font-size: 1.1em;
+   margin-right: 5px;
+}
+
+.dados input {
+   width: 100px;
+   background-color: rgb(211, 227, 255);
+   padding: 5px;
+   border: none;
+   outline-color: rgb(80, 123, 202);
+   font-size: 1.1em;
+   color: rgb(80, 123, 202);
+}
+
+.btn {
+   display: block;
+   background-color: cornflowerblue;
+   color: #eee;
+   font-size: 1.25em;
+   padding: 10px;
+   margin: 0 auto;
+   border: none;
+   outline: none;
+   border-radius: 5px;
+}
+
+.btn:hover {
+   background-color: rgb(131, 172, 248);
+}
+
+.resultado {
+   padding: 30px;
+   width: 100%;
+   margin-top: 60px;
+   border-top: 1px solid #ccc;
+}
+
+.resultado p {
+   font-size: 1.25em;
+   font-weight: bold;
+   margin-bottom: 10px;
+}
+
+#result {
+   font-size: 1.25em;
+   font-style: italic;
+}
+
+.dev {
+   position: absolute;
+   margin-top: 600px;
+   font-size: 1.25em;
+   color: cornflowerblue;
+}
