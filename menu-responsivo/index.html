@@ -4,113 +4,92 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-   <!--================ BOX ICONS ================-->
-   <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-
-   <!--================ CSS ================-->
+   <script src="https://kit.fontawesome.com/f4dad96733.js" crossorigin="anonymous"></script>
    <link rel="stylesheet" href="assets/css/style.css">
    <title>Responsive sidebar submenus</title>
 </head>
 <body>
    <!--================ HEADER ================-->
-   <header class="header">
-      <div class="header__container">
-         <img src="assets/img/perfil.jpg" alt="" class="header__img">
-
-         <a href="#" class="header__logo">Bedimcode</a>
+   <div class="container">
+      <header class="header">
+         <div class="header__logo">
+            <a href="#" class="header__logo-link">
+               <i class="fab fa-js-square header__logo-icon"></i>
+               <span class="header__logo-name"> JavaScript </span>
+            </a>
+         </div>
 
          <div class="header__search">
             <input type="search" placeholder="Search" class="header__input">
-            <i class='bx bx-search header__icon'></i> 
+            <i class="fas fa-search header__icon"></i>
          </div>
 
          <div class="header__toggle">
-            <i class='bx bx-menu' id="header-toggle"></i>
+            <svg width="21.999999999999996" height="21.999999999999996" xmlns="http://www.w3.org/2000/svg">
+               <g>
+                   <line stroke="#fff" class="firstLine" y2="4.146656" x2="25.477124" y1="4.146656" x1="-1.973854"
+                       stroke-width="3.5" />
+                   <line stroke="#fff" class="secondLine" y2="11.151682" x2="25.607844" y1="11.020963" x1="-2.104574"
+                       stroke-width="3.5" />
+                   <line stroke="#fff" class="thirdLine" y2="17.804165" x2="24.852663" y1="17.673446" x1="-1.683284"
+                       stroke-width="3.5" />
+               </g>
+           </svg>
          </div>
-      </div>    
-   </header>
+      </header>
+   
 
    <!--================ NAV ================-->
-   <div class="nav" id="navbar">
-      <nav class="nav__container">
-         <div>
-            <a href="#" class="nav__link nav__logo">
-               <i class='bx bxs-disc nav__icon' ></i>
-               <span class="nav__logo-name">Bedimcode</span>
-            </a>
-
-            <div class="nav__list">
-               <div class="nav__items">
-                  <h3 class="nav__subtitle">Profile</h3>
-
-                  <a href="#" class="nav__link">
-                     <i class='bx bx-home nav__icon' ></i>
-                     <span class="nav__name">Home</span>
+      <div class="nav nav__show nav__responsive">
+         <nav class="nav__menu">
+            <h3 class="nav__subtitle">Exemplos em aula</h3>
+            <ul class="nav__list">
+               <li class="nav__items">
+                  <a href="#" class="nav__link ">
+                     <i class="fas fa-sort-amount-down-alt nav__icon"></i>
+                     <span class="nav__items-name">Estrutura Sequencial</span>
                   </a>
-
-                  <div class="nav__dropdown">
-                     <a href="#" class="nav__link active">
-                        <i class='bx bx-user nav__icon' ></i>
-                        <span class="nav__name">Profile</span>
-                        <i class='bx bx-chevron-down nav__icon nav__dropdown-icon' ></i>
-                     </a>
-
-                     <div class="nav__dropdown-collapse">
-                        <div class="nav__dropdown-content">
-                           <a href="#" class="nav__dropdown-item">Passwords</a>
-                           <a href="#" class="nav__dropdown-item">Mail</a>
-                           <a href="#" class="nav__dropdown-item">Accounts</a>
-                        </div>
-                     </div>
-                  </div>
-
-                  <a href="#" class="nav__link">
-                     <i class='bx bx-message-rounded nav__icon' ></i>
-                     <span class="nav__name">Messages</span>
+               </li>
+               <li class="nav__items">
+                  <a href="#" class="nav__link nav__icon-dropdown nav__icon-rotate">
+                     <i class="fab fa-think-peaks nav__icon"></i>
+                     <span class="nav__items-name">Estrutura de Decisão</span>
                   </a>
-               </div>
-
-               <div class="nav__items">
-                  <h3 class="nav__subtitle">Menu</h3>
-
-                  <div class="nav__dropdown">
-                     <a href="#" class="nav__link">
-                        <i class='bx bx-bell nav__icon' ></i>
-                        <span class="nav__name">Notifications</span>
-                        <i class='bx bx-chevron-down nav__icon nav__dropdown-icon' ></i>
-                     </a>
-
-                     <div class="nav__dropdown-collapse">
-                        <div class="nav__dropdown-content">
-                           <a href="#" class="nav__dropdown-item">Blocked</a>
-                           <a href="#" class="nav__dropdown-item">Silenced</a>
-                           <a href="#" class="nav__dropdown-item">Publish</a>
-                           <a href="#" class="nav__dropdown-item">Program</a>
-                        </div>
-                     </div>
-                  </div>
-
+               </li>
+               <ul class="nav__dropdown-list nav__dropdown-hide">
+                  <li class="nav__dropdown-items">
+                     <a href="#" class="nav__dropdown-link">Exercício 01</a>
+                  </li>
+                  <li class="nav__dropdown-items">
+                     <a href="#" class="nav__dropdown-link">Exercício 02</a>
+                  </li>
+               </ul>
+               <li class="nav__items">
                   <a href="#" class="nav__link">
-                     <i class='bx bx-compass nav__icon' ></i>
-                     <span class="nav__name">Explore</span>
+                     <i class="fas fa-redo nav__icon"></i>
+                     <span class="nav__items-name">Estrutura de Repetição</span>
                   </a>
+               </li>
+            </ul>
+            
+         </nav>
+      </div>
+   
+      <main class="main main__move">
+         <h1 class="main__title">Estrutura de Decisão</h1>
 
-                  <a href="#" class="nav__link">
-                     <i class='bx bx-bookmark nav__icon' ></i>
-                     <span class="nav__name">Saved</span>
-                  </a>
-               </div>
+         <div class="main__container main__container-move">
+            <div class="main__enuciado">
+
+            </div>
+
+            <div class="main__resolucao">
+
             </div>
          </div>
-
-         <a href="#" class="nav__link nav__logout">
-            <i class='bx bx-log-out nav__icon' ></i>
-            <span class="nav__name">Loug Out</span>
-         </a>
-      </nav>
+      
+      </main>
    </div>
-
    <!--================ CONTENTS ================-->
 
 

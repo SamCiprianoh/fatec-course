@@ -1,29 +1,22 @@
-/*============== SHOW NAVBAR ================*/
-const showMenu = (headerToggle, navbarId) =>{
-   const toggleBtn = document.getElementById(headerToggle),
-   nav = document.getElementById(navbarId)
+//============== SHOW DROPDOW MENU ================
+var menuDoc = document.getElementsByClassName('nav__icon-dropdown')[0]
+var navDropdown = document.querySelector('.nav__dropdown-hide')
+var iconRotate = document.querySelector('.nav__icon-rotate')
 
-   // Validate that variables exist
-   if(headerToggle && navbarId){
-      toggleBtn.addEventListener('click', ()=>{
-         // We add the show-menu class to the div tag with the nav__menu class
-         nav.classList.toggle('show-menu')
-
-         // Change icon
-         toggleBtn.classList.toggle('bx-x')
-      })
-   }
-}
-showMenu('header-toggle','navbar')
+menuDoc.addEventListener('click', function(){
+    navDropdown.classList.toggle('nav__dropdown-hide')
+    iconRotate.classList.toggle('nav__icon-rotate')
+})
 
 
+//============== SHOW MENU ================
+var menuToggle = document.querySelector('.header__toggle')
+var menuNav = document.querySelector('.nav')
+var main = document.querySelector('.main')
+var mainCenter = document.querySelector('.main__container')
 
-/*============== LINK ACTIVE ================*/
-const linkColor = document.querySelectorAll('.nav__link')
-
-function colorLink(){
-    linkColor.forEach(l => l.classList.remove('active'))
-    this.classList.add('active')
-}
-
-linkColor.forEach(l => l.addEventListener('click', colorLink))
+menuToggle.addEventListener('click', function(){
+   menuNav.classList.toggle('nav__show')
+   main.classList.toggle('main__move')
+   mainCenter.classList.toggle('main__container-move')
+})
