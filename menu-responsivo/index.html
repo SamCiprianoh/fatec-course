@@ -74,23 +74,63 @@
             
          </nav>
       </div>
-   
+      
+
+      <!--================ CONTENTS ================-->
       <main class="main main__move">
          <h1 class="main__title">Estrutura de Decisão</h1>
 
          <div class="main__container main__container-move">
             <div class="main__enuciado">
-
+               <h1 class="title">Exercício 09 - lista 2</h1> 
+                  
+                  <p>Um banco concederá um crédito especial aos seus clientes de acordo com o saldo médio no último ano. Faça um programa que receba o saldo médio de um cliente e <b><em>calcule o valor do crédito,</em></b> de acordo com a tabela a seguir. <b><em>Mostre o saldo médio e o valor do crédito</em></b>.</p>
+                  <table class="content-table">
+                     <thead>
+                        <tr>
+                           <th>Saldo médio</th>
+                           <th>Percentual</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>Acima de R$ 400,00</td>
+                           <td>30% do saldo médio</td>
+                        </tr>
+                        <tr>
+                           <td>Entre R$ 400,00 e R$ 300,00</td>
+                           <td>25% do saldo médio</td>
+                        </tr>
+                        <tr>
+                           <td>Entre R$ 300,00 e R$ 200,00</td>
+                           <td>20% do saldo médio</td>
+                        </tr>
+                        <tr>
+                           <td>Até R$ 200,00</td>
+                           <td>10% do saldo médio</td>
+                        </tr>
+                     </tbody>
+                  </table>
             </div>
 
             <div class="main__resolucao">
+               <h2 class="title">Resulução:</h2>
+               <div class="dados">
+                  <label for="n1">Saldo médio:</label>
+                  <input type="number" id="n1">
+               </div>
+               
+               <button class="btn" type="button" onclick="calcula()">Executar</button>
 
+               <div class="resultado">
+                  <p>Resultado:</p>
+                  <div id="result"></div>
+               </div>
             </div>
          </div>
-      
       </main>
    </div>
-   <!--================ CONTENTS ================-->
+   
 
 
 

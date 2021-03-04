@@ -153,7 +153,7 @@ body{
 
 .main__container{
    width: calc(100% - 20rem);
-   height: 100vh;
+   min-height: calc(100vh - 6rem);
    display: flex;
    align-items: center;
    justify-content: center;
@@ -180,6 +180,55 @@ body{
    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
+.title {
+   margin-bottom: 30px;
+   font-size: 2em;
+}
+
+.main__enuciado p {
+   font-size: 1.2em;
+}
+
+.content-table {
+   background-color: rgb(211, 227, 255);
+   border-collapse: collapse;
+   margin: 30px 0;
+   font-size: 1.1em;
+   min-width: 100%;
+   border-radius: 8px 8px 0 0;
+   overflow: hidden;
+   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+   background-color: rgb(128, 165, 233);
+   color: #eee;
+   text-align: left;
+}
+
+.content-table th,
+.content-table td {
+   padding: 12px 15px;
+}
+
+.content-table tbody tr {
+   border-bottom: 1px solid rgb(243, 246, 250);
+}
+
+.content-table tbody tr:nth-last-of-type(even) {
+   background-color: rgb(228, 237, 255);
+}
+
+.content-table tbody tr:last-of-type {
+   border-bottom: 2px solid rgb(128, 165, 233);
+}
+
+
+
+
+
+
+
 .main__resolucao{
    background-color: ghostwhite;
    color: rgb(80, 123, 202);
@@ -190,11 +239,65 @@ body{
    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
+h2 {
+   text-align: center;
+}
 
+.dados {
+   margin: 60px 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
 
+.dados label {
+   font-size: 1.1em;
+   margin-right: 5px;
+}
 
+.dados input {
+   width: 100px;
+   background-color: rgb(211, 227, 255);
+   padding: 5px;
+   border: none;
+   outline-color: rgb(80, 123, 202);
+   font-size: 1.1em;
+   color: rgb(80, 123, 202);
+}
 
+.btn {
+   display: block;
+   background-color: cornflowerblue;
+   color: #eee;
+   font-size: 1.25em;
+   padding: 10px;
+   margin: 0 auto;
+   border: none;
+   outline: none;
+   border-radius: 5px;
+}
 
+.btn:hover {
+   background-color: rgb(131, 172, 248);
+}
+
+.resultado {
+   padding: 30px;
+   width: 100%;
+   margin-top: 60px;
+   border-top: 1px solid #ccc;
+}
+
+.resultado p {
+   font-size: 1.25em;
+   font-weight: bold;
+   margin-bottom: 10px;
+}
+
+#result {
+   font-size: 1.25em;
+   font-style: italic;
+}
 
 
 
@@ -235,10 +338,17 @@ body{
 @media screen and (max-width: 1535px){
    .main__enuciado {
       border-radius: 15px;
-      margin: 2rem;
+      margin: 2rem 0;
    }
    
    .main__resolucao{
       border-radius: 15px;
+      margin-bottom: 3rem;
    } 
+}
+
+@media screen and (max-width: 500px){
+   .main__enuciado {
+      height: 800px;
+   }
 }

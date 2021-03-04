@@ -101,14 +101,6 @@ main {
 
 
 
-
-
-
-.title {
-   margin-bottom: 30px;
-   font-size: 2em;
-}
-
 .container-enuciado {
    background-color: ghostwhite;
    color: rgb(80, 123, 202);
@@ -119,6 +111,14 @@ main {
    border-right: 1px solid rgb(220, 220, 255);
    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
+
+
+.title {
+   margin-bottom: 30px;
+   font-size: 2em;
+}
+
+
 
 .container-enuciado p {
    font-size: 1.2em;
