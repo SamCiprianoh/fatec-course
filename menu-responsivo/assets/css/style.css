@@ -223,12 +223,6 @@ body{
    border-bottom: 2px solid rgb(128, 165, 233);
 }
 
-
-
-
-
-
-
 .main__resolucao{
    background-color: ghostwhite;
    color: rgb(80, 123, 202);
@@ -298,11 +292,6 @@ h2 {
    font-size: 1.25em;
    font-style: italic;
 }
-
-
-
-
-
 
 /* ========== MEDIA QUERIES ==========*/
 @media screen and (max-width: 320px){
