@@ -84,6 +84,26 @@ function exc05(){
    console.log(totalAno)
 }
 
+function exc22(){
+   let num = []
+
+   for(let i = 0; i < 2; i++){
+      num[i] = []
+      for(let j = 0; j < 3; j++){
+         num[i][j] = Number(prompt(`Informe o ${j+1}º número do Array ${i+1}:`))
+      }
+   }
+
+   let somaColuna = []
+   for(let j = 0; j < 3; j++){
+      for(let i = 0; i < 3; i++){
+        
+      }
+   }
+
+   console.log(num)
+}
+
 function exc23(){
    let num = []
    for(let i = 0; i < 2; i++){

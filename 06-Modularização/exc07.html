@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Exercício 07</title>
+</head>
+<body>
+   <div class="container">
+
+      <img src="img/programador.svg" alt="Programador" class="img">
+
+      <div class="programa">
+         <p class="programa__text">
+            A prefeitura de uma cidade fez uma pesquisa entre os seus habitantes, coletando dados sobre o salário e número de filhos.
+         </p>
+         <p class="programa__text">
+            Faça uma função que leia esses dados para um número não determinado de pessoas e retorne:
+         </p>
+         <ul class="programa__list">
+            <li class="programa__item">A média de salário da população</li>
+            <li class="programa__item">A média do número de filhos</li>
+            <li class="programa__item">O maior salário</li>
+            <li class="programa__item">O Percentual de pessoas com salário até R$ 350.00</li>
+         </ul>
+         <input type="button" value="Nova Pesquisa" class="programa__btn" id="btPesquisa">
+         <input type="button" value="Executar Programa" class="programa__btn" id="btExecutar">
+         <div class="programa__resultado">
+            <h3 class="programa__title" id="outSubTitle"></h3>
+            <p class="programa__resposta" id="outMediaSalario"></p>
+            <p class="programa__resposta" id="outMediaFilhos"></p>
+            <p class="programa__resposta" id="outmaiorSalario"></p>
+            <p class="programa__resposta" id="outpercentual350"></p>
+         </div>
+      </div>
+   </div>
+
+   <div class="modal__container" id="modal__salario">
+      <div class="modal">
+         <button class="modal__fechar" id="fechar">X</button>
+         <h3 class="modal__subtitle">Cadastrar Nova Pesquisa</h3>
+         <form class="modal__forms" id="forms">
+            <span class="modal__name">Nome *</span>
+            <input type="text" placeholder="Digite o nome" class="modal__inNome" id="inNome">
+            <span class="modal__name">Salário *</span>
+            <input type="number" placeholder="Digite o salário" class="modal__inSalario" id="inSalario">
+            <span class="modal__name">Filhos *</span>
+            <input type="number" placeholder="Quantos filhos" class="modal__inFilhos" id="inFilhos">
+         </form>
+         <input type="button" value="Cadastrar" class="modal__btn" id="btCadastrarPesquisa">
+      </div>
+   </div>
+
+   
+   
+   <script src="js/exc07.js"></script>
+</body>
+</html>
